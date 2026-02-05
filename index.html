@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Friday - Latte Agencia</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; padding: 40px; }
+        .container { max-width: 1000px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { color: #333; border-bottom: 2px solid #673ab7; padding-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 12px; border: 1px solid #eee; text-align: left; }
+        th { background: #673ab7; color: white; text-transform: uppercase; font-size: 12px; }
+        .status { padding: 5px 10px; border-radius: 4px; font-weight: bold; font-size: 12px; }
+        .status-encurso { background: #fff3cd; color: #856404; } /* Amarillo */
+        .status-listo { background: #d4edda; color: #155724; } /* Verde */
+        .status-noiniciado { background: #f8d7da; color: #721c24; } /* Rojo */
+        .priority-alta { color: #d9534f; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Friday: Gestión de Proyectos (Latte)</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Tarea</th>
+                    <th>Estado</th>
+                    <th>Prioridad</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Redes</td>
+                    <td>Posteo Semanal Historias</td>
+                    <td><span class="status status-encurso">En Curso</span></td>
+                    <td class="priority-alta">Alta</td>
+                    <td>2026-02-09</td>
+                </tr>
+                <tr>
+                    <td>Software</td>
+                    <td>(Facturar en R2) - Victor</td>
+                    <td><span class="status status-encurso">En Curso</span></td>
+                    <td>Media</td>
+                    <td>2026-02-10</td>
+                </tr>
+                <tr>
+                    <td>Redes</td>
+                    <td>Actualizar Página Web</td>
+                    <td><span class="status status-listo">Listo</span></td>
+                    <td class="priority-alta">Crítica</td>
+                    <td>2025-02-28</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
