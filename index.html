@@ -3,20 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Friday - Latte Agencia</title>
-    <style>
-        body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; padding: 20px; }
-        .container { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        h1 { color: #673ab7; }
-        .form-group { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; background: #f9f9f9; padding: 15px; border-radius: 8px; }
-        input, select, button { padding: 10px; border: 1px solid #ddd; border-radius: 4px; }
-        button { background: #673ab7; color: white; cursor: pointer; border: none; font-weight: bold; }
-        button:hover { background: #512da8; }
-        table { width: 100%; border-collapse: collapse; }
-        th, td { padding: 12px; border: 1px solid #eee; text-align: left; }
-        th { background: #673ab7; color: white; }
-        .status-badge { padding: 4px 8px; border-radius: 12px; font-size: 12px; font-weight: bold; background: #eee; }
-    </style>
-</head>
+    <link rel="stylesheet" href="style.css"> </head>
 <body>
     <div class="container">
         <h1>Friday: Gestión de Tareas</h1>
@@ -45,29 +32,9 @@
                     <th>Estado</th>
                 </tr>
             </thead>
-            <tbody id="tablaCuerpo">
-                </tbody>
+            <tbody id="tablaCuerpo"></tbody>
         </table>
     </div>
 
-    <script>
-        function agregarTarea() {
-            const tarea = document.getElementById('tareaInput').value;
-            const categoria = document.getElementById('categoriaSelect').value;
-            const prioridad = document.getElementById('prioridadSelect').value;
-
-            if (tarea === '') return alert('Escribí una tarea');
-
-            const fila = `<tr>
-                <td>${tarea}</td>
-                <td>${categoria}</td>
-                <td>${prioridad}</td>
-                <td><span class="status-badge">Pendiente</span></td>
-            </tr>`;
-
-            document.getElementById('tablaCuerpo').innerHTML += fila;
-            document.getElementById('tareaInput').value = ''; // Limpiar input
-        }
-    </script>
-</body>
+    <script src="app.js"></script> </body>
 </html>
